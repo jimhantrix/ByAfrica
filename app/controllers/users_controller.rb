@@ -1,8 +1,8 @@
 class UsersController < ApplicationController
 
 
-	def index 
-		@users = User
+	def show 
+		@users = User.friendly.find(params[:id])
 	end
 
 
