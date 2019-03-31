@@ -14,4 +14,7 @@ class UsersController < ApplicationController
 		user = User.create(first_name: params[:first_name], last_name: params[:last_name], email: params[:email], params[:email], phone: params[:phone], country: params[:country], address: params[:address], password: params[:password])
 		redirect_to_users_path
 
+	end 
+	
+
 end
