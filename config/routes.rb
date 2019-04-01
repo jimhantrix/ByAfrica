@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-	root "users#index"
+	root "categories#index"
 
 	get "/users" => "users#index", as: "users"
 

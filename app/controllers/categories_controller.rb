@@ -1,11 +1,11 @@
 class CategoriesController < ApplicationController
 
-	def index 
+	# def index 
 
-		@cateogries = Category.all 
+	# 	@categories = Category.friendly.find(params[:id])
 
-		render :index
+		
 
-	end 
+	# end 
 
 end
