@@ -9,7 +9,7 @@ class UsersController < ApplicationController
 
 		user = User.create(first_name: params[:first_name], 
 			last_name: params[:last_name],
-			 email: params[:email], params[:email],
+			 email: params[:email],
 			 phone: params[:phone],
 			 country: params[:country],
 			 address: params[:address], 
@@ -24,7 +24,7 @@ class UsersController < ApplicationController
 		flash[:warning] = "invalid email or password"
 		redirect_to "signup"
 	end 
-	
+
   end 
 
 end

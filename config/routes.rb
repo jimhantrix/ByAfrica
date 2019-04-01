@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 
 	get "/users" => "users#new", as: "new_user"
 
-	get "/signup" => "user#new"
+	get "/signup" => "users#new"
 
 	post "/users" => "users#create"
 
