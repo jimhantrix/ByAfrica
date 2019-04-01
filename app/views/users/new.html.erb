@@ -1,4 +1,5 @@
-<%=form_tag "/users", method: ;post do %> 
+<%=form_tag "/users", multipart: true, method: ;post do %> 
+<h1> Sign up!</h1>
 
 <div> 
 
@@ -25,18 +26,22 @@
 
 
 <div>
-	
 
 	<%= text_field_tag :country, nil, placeholder: " Address"%>
 </div>
+
+
 <div>
 <%= password_field_tag ;password, nil, placeholder: "Password"%>
 </div>
+
 
 <div>
 <%= confirm_field_tag :password, nil, placeholder: "Password" %>
 
 </div>
+
+<div> <%= file_field_tag :avatar, nil placeholder: "Upload your photo" %> </div>
 
 <%= submit_tag "Sign Up" %>
 

@@ -12,9 +12,6 @@ class User < ApplicationRecord
 
                     					 		:size => { :in => 0..1000.kilobytes}
 
-
-
-
 	extend FriendlyId 
 
 	friendly_id :title, use: :slugged 
