@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
-	root "categories#index"
+	# root :to => "categories#index"
+
+	#Users
 
 	get "/users" => "users#index", as: "users"
 
@@ -13,10 +15,14 @@ Rails.application.routes.draw do
 	get "/user/:id" => "users#show", as: "user"
 
 
+	#Sessions 
 
 	get "/login" => "sessions#new"
 
 	get "/login" => "sessions#create"
 
 	get "/logout" => "sessions#destroy"
+
+
+	get "/libraries" => "categories#index"
 end
