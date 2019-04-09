@@ -1,11 +1,8 @@
 class CategoriesController < ApplicationController
 
-	# def index 
+	 def index 
+		# @categories = Category.friendly.find(params[:id])
 
-	# 	@categories = Category.friendly.find(params[:id])
-
-		
-
-	# end 
+	 end 
 
 end
