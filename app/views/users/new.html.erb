@@ -1,55 +1,55 @@
 <%=form_tag "/users", multipart: true, method: :post do %> 
-<h1> Sign up!</h1>
-
-<form>
-	<div class="form-group row">
-
-	<%= text_field_tag :first_name, nil, placeholder: "First Name" %>
-
-	</div>
 
 
+				<form>
+					<div class="form-group row">
 
-	<div>
-		
-		<%= text_field_tag :last_name, nil, placeholder: " Last Name" %>
+					<%= text_field_tag :first_name, nil, placeholder: "First Name" %>
 
-
-	</div>
-
-	<%= text_field_tag :email, nil, placeholder: "Email" %>
+					</div>
 
 
 
-	<div>
-
-		<%= text_field_tag :country, nil, placeholder: " Country"%>
-	</div>
-
-	<div>
-
-		<%= text_field_tag :address, nil, placeholder: " Address"%>
-	</div>
+					<div>
+						
+						<%= text_field_tag :last_name, nil, placeholder: " Last Name" %>
 
 
-	<div>
-		
-		<%= text_field_tag :phone, nil, placeholder: "Phone number"%>
-	</div>
+					</div>
 
-	<div>
-	<%= password_field_tag :password, nil, placeholder: "Password"%>
-	</div>
+					<%= text_field_tag :email, nil, placeholder: "Email" %>
 
 
 
+					<div>
 
-	<div> 
-		<%= file_field_tag :avatar,  placeholder: "Upload your photo" %>
-	</div>
+						<%= text_field_tag :country, nil, placeholder: " Country"%>
+					</div>
 
-</form>
+					<div>
+
+						<%= text_field_tag :address, nil, placeholder: " Address"%>
+					</div>
+
+
+					<div>
+						
+						<%= text_field_tag :phone, nil, placeholder: "Phone number"%>
+					</div>
+
+					<div>
+					<%= password_field_tag :password, nil, placeholder: "Password"%>
+					</div>
+
+					<div> 
+						<%= file_field_tag :avatar,  placeholder: "Upload your photo" %>
+					</div>
+
+				</form>
 
 <%= submit_tag "Sign Up" %>
 
  <% end %>
+
+
+
