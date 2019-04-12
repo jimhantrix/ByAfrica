@@ -18,7 +18,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'bootstrap-sass', '~> 3.4.1'
 gem 'friendly_id'
 gem "paperclip"
-gem 'materialize-sass'
+gem 'materialize-sass', '~> 1.0.0'
 
 
 # Use CoffeeScript for .coffee assets and views
