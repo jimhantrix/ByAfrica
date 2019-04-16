@@ -2,40 +2,29 @@
 <html>
   <head>
     <title>ByAfrica</title>
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+      <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 
     <%= csp_meta_tag %> 
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
     </head>
-  </head>
 
   <body>
-
-
 <nav>
-    <div class="nav-wrapper black">
-      <a href="#" class="brand-logo">ByAFrica</a>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">ByAfrica</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="sass.html">Search</a></li>
-        <li><a href="badges.html">Login</a></li>
-        <li><a href="collapsible.html">Singup</a></li>
-
-       </ul>
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">JavaScript</a></li>
+      </ul>
     </div>
   </nav>
 
 
-  
-  </div>
-
-
-  
+<div class ="container">
 
     <%= yield %>
-
-      <script type="text/javascript" src="js/materialize.min.js"></script>
-
-
+</div>
   </body>
 </html>
