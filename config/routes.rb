@@ -25,4 +25,11 @@ Rails.application.routes.draw do
 
 
 	get "/libraries" => "categories#index"
+
+
+	#Categories
+
+	get "/categories/new" => 'categories#new'
+
+	
 end
