@@ -1,12 +1,23 @@
+<div class= "container">
+<h4> For Us By Us</h4>
+</div>
 
-<div class="container">
+<div class = "row">
+		<table>
+			<tr>
+						<% @categories.all.each do |category|%>
 
-	<div class ="Jumbotron text-center">
+							<div class = "col-sm-4">
 
-		<h1> All Categories</h1>
+								<div class ="indexPage">
 
-		<!-- <a href ="/categories?sort=&sort_order=ASC">Sort by ascedning  -->
+										<h1><%=link_to category.category, "/categories/#{category.id}"%></h1>
 
+										<img src= "<%=category.avatar.url(:medium)%>">
+								</div>
+						</div>
+						<%end%>
+			</tr>
+		</table>
 	</div>
-
 </div>
