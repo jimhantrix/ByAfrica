@@ -1,7 +1,7 @@
 class CategoriesController < ApplicationController
 
 	def index 
-		@categories = Category.friendly.all
+		@categories = Category.all
 	 end 
 
 	 def avatar 
@@ -28,6 +28,7 @@ class CategoriesController < ApplicationController
 	 	else 
 	 		render :edit
 	 end 
+	end 
 
 	 def search 
 	 	@category = Category.friendly.find_by([:id])
